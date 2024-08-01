@@ -1,0 +1,37 @@
+/* responsive media query for small device */
+
+
+
+@media screen  and (max-width:576px) {
+    .icon{
+      display: block;
+        color: white;
+        
+    }
+
+    .list-container{
+      display: none;
+    }
+    
+
+         /* banner  */
+         
+
+    .banner{
+    
+      flex-direction: column;
+     margin-top: -100px;
+      
+      padding: 20px;
+    
+        }
+        
+      
+
+  }
+  
+
+
+
+
+

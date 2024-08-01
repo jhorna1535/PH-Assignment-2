@@ -1,7 +1,8 @@
 
+                      /* fonts  */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-
 
 .inter-normal {
   font-family: "Inter", sans-serif;
@@ -12,19 +13,19 @@
 }
 @import url('https://fonts.cdnfonts.com/css/miama');
 
-                
 .shape{
   font-family: 'Miama', sans-serif;
   font-weight:500;
   font-size:65px;
   line-height: 0.9;
 }
+          /* universal section */
 *{
   margin: 0px;
   
  
 }
-/* shared styles */
+            /* shared styles */
 body{
   background-color: black;
 }
@@ -59,7 +60,7 @@ color: rgba(255, 255, 255, 0.50);
 
 
 
-/* nav style start */
+                     /* nav style start */
 .bg-colour{
  
   background-image: linear-gradient(180deg, black, rgb(43, 37, 37),black);
@@ -119,7 +120,10 @@ color: rgb(230, 83, 60);
   padding: 0px 80px 0px 0px;
 
 }
-/* banner style start */
+.icon{
+  display: none;
+}
+            /* banner style start */
 
 .banner{
 
@@ -280,47 +284,119 @@ margin-top: 250px;
   color: white;
 
 }
-.section-3-img-1{
-  height: 201.5px;
-  width: 250px;
-  
+.photo-gallery{
+  border: 0px solid tomato;
+  margin-top: 58px;
 }
 
-.section-3-img-2{
-  height: 201.5px;
-  width:  520px; 
-  
-}
-.section-3-img-3{
-  height: 201.5px;
-  width:  290px;  
-}
-.section-3-img-4{
-  height: 201.5px;
-  width:  425px;
-}
-.section-3-img-5{
-  height: 201.5px;
-  width: 288px;
-}
-.section-3-img-6{
-  height:201.5px ;
-  width:347px ;
-}
-.section-3-images-row1{
+.row-1, .row-2{
   display: grid;
-  grid-template-columns: repeat(3,1fr 1.6fr 1fr);
-  
+  grid-template-columns: 1fr 1fr 1fr;
+  /* margin: 1rem 0; */
+  /* gap: 0; */
 }
-.section-3-images-row2{
-  display: grid;
-  grid-template-columns: repeat(3,1fr 1.6fr 1fr);
-  
+
+.row-1{
+  grid-template-columns: 0.7fr 1.4fr 0.9fr;
 }
-.section-3-img-1{
-  background-color: aquamarine;
-  background-blend-mode:hue ;
+
+.row-2{
+  grid-template-columns: 1.2fr 0.8fr 1fr;
+  margin-top: -5px;
 }
+
+.image-card img{
+  width: 100%;
+  height: 218px;
+  filter: brightness(60%);
+}
+
+.image-card{
+  position: relative;
+  display: inline-block;
+}
+
+.image-bg1::before {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 218px;
+  background-color: #06ffd280;
+  z-index: 1; 
+}
+
+.image-bg2::before {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 218px;
+  background-color: #ff00004d;
+  z-index: 1; 
+}
+
+.image-bg3::before {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 218px;
+  background-color: #00000080;
+  z-index: 1; 
+}
+
+.image-bg4::before {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 218px;
+  background-color: #00000080;
+  z-index: 1; 
+}
+
+.image-bg5::before {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 218px;
+  background-color: #42ff004d;
+  z-index: 1; 
+}
+
+.image-bg6::before {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 218px;
+  background-color: #0047ff4d;
+  z-index: 1; 
+}
+
+
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
 /* BMI calculator div start */
 .bmi-cal{
   padding:88px 384px 88px 384px ;
@@ -504,3 +580,5 @@ table, th, td {
    
    
   }
+
+ 
