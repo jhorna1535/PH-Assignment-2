@@ -1,30 +1,284 @@
-/* responsive media query for small device */
+/* Responsive Styles and Breakpoints */
 
 
-
-@media screen  and (max-width:576px) {
-    .icon{
-      display: block;
-        color: white;
-        
-    }
-
-    .list-container{
+/* Breakpoint For Small Devices (up to 576px) */
+@media screen and (max-width: 576px) {
+    
+  .navbar{
+      padding: 50px 20px;
+  }
+  .menus{
       display: none;
-    }
-    
+  }
+  .ham-burger{
+      display: block;
+      color: white;
+  }
+  .ham-burger .fa-bars{
+      font-size: 30px;
+  }
 
-         /* banner  */
-         
 
-    .banner{
-    
+  .banner{
       flex-direction: column;
-     margin-top: -100px;
-      
       padding: 20px;
-    
-        }
+      margin-top: -100px;
+  }
+
+  .banner-left{
+      width: 100%;
+  }
+
+  .banner-left-text{
+      width: 60%;
+      line-height: 120%;
+  }
+
+  .banner-left h1{
+      font-size: 36px;
+  }
+
+  .banner-left span{
+      font-size: 4rem;
+  }
+
+  .banner-btn{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .banner-btn .primary-btn, .secondary-btn{
+      font-size: 18px;
+  }
+
+  .banner-right{
+      width: 100%
+  }
+
+  .banner-right img{
+      margin-left: 0px;
+  }
+
+  .banner-right .box-2{
+      width: 145.91px;
+      height: 74.09px;
+      right: 5%;
+      top: 10%;
+  }
+  .box-2 h1{
+      font-size: 30.24px;
+  }
+  .box-2 p{
+      font-size: 9.83px;
+  }
+  .banner-right .box-1{
+      width: 155.74px;
+      height: 72.58px;
+      top: 40%;
+  }
+  .box-1 h1{
+      font-size: 18.14px;
+  }
+  .box-1 p{
+      font-size: 12.1px;
+  }
+  .banner-right .triangle{
+      display: none;
+  }
+
+  /* Change your habit */
+  .change-your-habit{
+      margin-top: 0px;
+  }
+  .change-your-habit-header{
+      width: 90%;
+  }
+  .change-your-habit-header h1{
+      font-size: 32px;
+  }
+  .change-your-habit-header p{
+      font-size: 14px;
+  }
+  .change-your-habit-footer{
+      flex-direction: column;
+  }
+  .habit-image-card{
+      width: 100%;
+  }
+  .habit-image-card .card-text{
+      margin: 40px 0;
+      width: 60%;
+  }
+  /* Run Extra Mile */
+  .run-extra-mile{
+      margin-top: 60px;
+      margin: 20px;
+  }
+  .run-extra-mile-content{
+      flex-direction: column;
+  }
+  .run-extra-mile-content .primary-btn{
+      width: 100%;
+  }
+  .run-left{
+      width: 100%;
+  }
+  .run-left h1{
+      font-size: 32px;
+  }
+  .run-left p{
+      font-size: 14px;
+      margin-bottom: 24px;
+  }
+  .run-right{
+      width: 100%;
+  }
+
+  .right-image{
+      height: 170px;
+      margin-top: 30px;
+  }
+
+  /* Training and Exercise */
+  .training-exercise-section{
+      margin-top: 60px;
+      padding: 20px;
+  }
+  .training-exercise-head{
+      width: 95%;
+  }
+  .training-exercise-head h1{
+      font-size: 32px;
+      margin-bottom: 14px;
+  }
+  .training-exercise-head p{
+      font-size: 14px;
+  }
+
+  .row-1, .row-2{
+      display: grid;
+      /* grid-template-columns: 1fr 1fr; */
+      grid-auto-rows: auto;
+  }
+  
+  .row-1{
+      grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .row-2{
+      grid-template-columns: 1fr 1fr;
+  }
+
+  /* BMI Calculator */
+  .bmi-head{
+      width: 100%;
+      padding: 20px;
+      margin-top: 0px;
+  }
+  .bmi-head h1{
+      font-size: 32px;
+  }
+  .bmi-calculator-section{
+      padding: 20px;
+      margin-top: 0px;
+  }
+  .bmi-content{
+      flex-direction: column;
+  }
+  .bmi-left, .bmi-right{
+      width: 100%;
+  }
+  .bmi-left{
+      margin-top: -30px;
+      border: 0px solid red;
+      margin-bottom: 40px;
+  }
+  .bmi-left h1{
+      font-size: 16px;
+      margin-bottom: 25px;
+  }
+  .bmi-left table{
+      width: 90%;
+  }
+  
+  .bmi-right input[type="text"], select{
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 12px 40px 12px 20px;
+      border: none;
+      outline: none;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+      font-weight: 400;
+      width: 49%;
+      margin: 5px 0;
+  }
+
+  .form input[type="text"]:nth-child(2){
+      margin-left: 0px;
+  }
+  
+  .form .left{
+      margin-left: 0px;
+  }
+  /* Meet Our Team */
+  .image-content{
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  .meet-our-team{
+      padding: 20px;
+  }
+
+  .meet-our-team-head{
+      width: 100%;
+      margin-top: -50px;
+  }
+
+  .meet-our-team-head h1{
+      font-size: 32px;
+  }
+  
+
+  /* Footer */
+  footer{
+      padding: 20px;
+      margin-top: 50px;
+  }
+  .footer-content{
+      flex-direction: column;
+      margin-top: -30px;
+  }
+  .footer-left{
+      width: 100%;
+  }
+  .footer-left .logo h1{
+      font-size: 70px;
+      margin-bottom: 20px;
+  }
+  .footer-left p{
+      margin-bottom: 30px;
+  }
+  .footer-middle{
+      width: 100%;
+      margin-bottom: 30px;
+  }
+  .footer-right{
+      width: 100%;
+  }
+}
+
+
+
+/* Breakpoint for Medium Devices (576px to 992px */
+
+
+
+
+
+/* Breakpoint for Large Devices (above 992px) */
+
         
       
 
